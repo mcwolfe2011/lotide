@@ -25,4 +25,4 @@ const countLetters = function(string) {
   return result;
 };
 
-countLetters();
+console.log(countLetters("Lighthouse Labs"));

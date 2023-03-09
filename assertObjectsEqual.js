@@ -13,6 +13,8 @@ const eqArrays = function(array1, array2) {
 
 };
 
+eqArrays([1,2.3], [1,2,3]);
+
 const eqObjects = function(object1, object2) {
   let output = true;
   const array1 = Object.keys(object1);
