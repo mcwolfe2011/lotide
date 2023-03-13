@@ -38,8 +38,6 @@ const middle = function(array) {
   return midItems;
 };
 
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
-console.log(middle([1, 2, 3, 4, 5])); // => [3]
-console.log(middle([1, 2])); // => []
-let equality = assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-console.log(equality); // Assertion Passed
+
+
+module.exports = middle;
