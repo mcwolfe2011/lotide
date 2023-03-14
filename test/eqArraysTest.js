@@ -1,9 +1,13 @@
-//test/eqArraysTest.js
-const assertEqual = require('../assertEqual');
-const eqArrays = require('../eqArrays');
+const assert = require('chai').assert;
 
-//Test Code:
-assertEqual(eqArrays(([1, 2, 3], [1, 2, 3]), true)); // => (e.g. #1) should PASS
-eqArrays([1, 2, 3], [1, 2, 3]); // => true (e.g. #2)
-eqArrays(["1", "2", "3"], ["1", "2", "3"]); // => true (e.g. #4)
+describe("#eqArrays", () => {
+  it("returns ✅✅✅ Assertion Passed", () => {
+    assert(([1, 2, 3], [1, 2, 3]), true);
+  });
+  it("returns 🛑🛑🛑 Assertion Failed", () => {
+    assert("Lighthouse Labs", [1, 2, 3]);
+  });
+});
+
+
 

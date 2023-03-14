@@ -1,10 +1,11 @@
-const assertEqual = require('./assertEqual');
+//const assertEqual = require('./assertEqual');
 
 const tail = function(array) {
-  return array.slice(1);
+  let newArray = array.slice(1);
+  return newArray;
 };
 
-assertEqual();
+//assertEqual();
 
 //Test Case: Check the original array
 // const words = ["Yo Yo", "Lighthouse", "Labs"];
